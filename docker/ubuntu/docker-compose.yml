@@ -7,4 +7,5 @@ services:
       args:
         - UBUNTU_VERSION=${UBUNTU_VERSION}
         - TZ=${TZ}
+        - LANG=${LANG}
     tty: true
