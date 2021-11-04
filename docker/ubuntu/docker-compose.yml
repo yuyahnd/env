@@ -6,4 +6,5 @@ services:
       context: ./
       args:
         - UBUNTU_VERSION=${UBUNTU_VERSION}
+        - TZ=${TZ}
     tty: true
