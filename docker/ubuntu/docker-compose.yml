@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  ubuntu:
+    build:
+      context: ./
+      args:
+        - UBUNTU_VERSION=${UBUNTU_VERSION}
+    tty: true
