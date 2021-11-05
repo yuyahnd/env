@@ -46,4 +46,9 @@ RUN wget https://www.python.org/ftp/python/3.8.12/Python-3.8.12.tar.xz \
     && pip3 install --upgrade pip \
     && pip3 install --upgrade setuptools
 
+ARG USER_NAME=ubuntu
+RUN useradd -m -s /bin/bash ${USER_NAME}
+USER ${USER_NAME}
+WORKDIR /home/${USER_NAME}
+
 CMD ["/bin/bash"]
