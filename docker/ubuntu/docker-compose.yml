@@ -8,4 +8,5 @@ services:
         - UBUNTU_VERSION=${UBUNTU_VERSION}
         - TZ=${TZ}
         - LANG=${LANG}
+        - USER_NAME=${USER_NAME}
     tty: true
